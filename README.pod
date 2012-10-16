@@ -1,3 +1,13 @@
 =head1 DESCRIPTION
 
 These are my emacs customizations... :)
+
+=head1 USAGE
+
+Add following line to you .emacs file:
+
+  ;;;;;; for my custom
+  (add-to-list 'load-path "~/.myel/")
+  (load "achilles")
+
+Enjoy it.
