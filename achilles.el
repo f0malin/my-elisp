@@ -100,5 +100,5 @@
 (require 'multi-web-mode)
 (setq mweb-default-major-mode 'html-mode)
 (setq mweb-tags '((js-mode "<script[^>]*?>" "</script>")))
-(setq mweb-filename-extensions '("tt" "html"))
+(setq mweb-filename-extensions '("tt" "html" "tx"))
 (multi-web-global-mode 1)
