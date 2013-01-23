@@ -89,9 +89,6 @@
 (global-set-key "\C-cd" 'duplicate-line)
 ;; goto-line
 (global-set-key "\C-cg" 'goto-line)
-;; auto mode
-(setq auto-mode-alist (cons '("\\.t$" . cperl-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.psgi$" . cperl-mode) auto-mode-alist))
 ;; no backup
 (setq make-backup-files nil)
 (setq-default make-backup-files nil)
@@ -99,6 +96,20 @@
 ;;;;;; for multi-web-mode
 (require 'multi-web-mode)
 (setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((js-mode "<script[^>]*?>" "</script>")))
+(setq mweb-tags '((js-mode "<script>" "</script>")))
+(setq mweb-tags '((css-mode "<style[^>]*?>" "</style>")))
 (setq mweb-filename-extensions '("tt" "html" "tx"))
 (multi-web-global-mode 1)
+
+;;;;;; for less-css-mode
+(require 'less-css-mode)
+;;(setq less-css-compile-at-save t)
+
+;; auto mode
+(setq auto-mode-alist (cons '("\\.t$" . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.psgi$" . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.less$" . less-css-mode) auto-mode-alist))
+
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.myel//ac-dict")
+(ac-config-default)
