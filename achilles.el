@@ -113,3 +113,15 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.myel//ac-dict")
 (ac-config-default)
+
+;; for jade-mode
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; for livescript-mode
+(require 'livescript-mode)
+
+;; for perl-lisp
+(add-to-list 'auto-mode-alist '("\\.plp$" . lisp-mode))
