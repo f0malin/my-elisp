@@ -110,9 +110,9 @@
 (setq auto-mode-alist (cons '("\\.psgi$" . cperl-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.less$" . less-css-mode) auto-mode-alist))
 
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.myel//ac-dict")
-(ac-config-default)
+;(require 'auto-complete-config)
+;(add-to-list 'ac-dictionary-directories "~/.myel//ac-dict")
+;(ac-config-default)
 
 ;; for jade-mode
 (require 'sws-mode)
@@ -121,7 +121,7 @@
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 ;; for livescript-mode
-(require 'livescript-mode)
+;(require 'livescript-mode)
 
 ;; for perl-lisp
 (add-to-list 'auto-mode-alist '("\\.plp$" . lisp-mode))
