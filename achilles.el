@@ -96,8 +96,7 @@
 ;;;;;; for multi-web-mode
 (require 'multi-web-mode)
 (setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((js-mode "<script>" "</script>")))
-(setq mweb-tags '((css-mode "<style[^>]*?>" "</style>")))
+(setq mweb-tags '((javascript-mode "<script[^>]*?>" "</script>") (css-mode "<style[^>]*?>" "</style>")))
 (setq mweb-filename-extensions '("tt" "html" "tx"))
 (multi-web-global-mode 1)
 
