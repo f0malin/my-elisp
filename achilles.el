@@ -136,3 +136,5 @@
 
 ;; for sass
 (require 'sass-mode)
+(require 'scss-mode)
+(setq scss-compile-at-save nil)
