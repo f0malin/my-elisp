@@ -138,3 +138,7 @@
 (require 'sass-mode)
 (require 'scss-mode)
 (setq scss-compile-at-save nil)
+
+;; for yaml
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
