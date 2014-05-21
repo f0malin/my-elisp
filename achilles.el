@@ -96,7 +96,7 @@
 ;;;;;; for multi-web-mode
 (require 'multi-web-mode)
 (setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((javascript-mode "<script[^>]*?>" "</script>") (css-mode "<style[^>]*?>" "</style>")))
+(setq mweb-tags '((javascript-mode "<script[^>]*?>" "</script>") (css-mode "<style[^>]*?>" "</style>") (php-mode "<\?php" "\?>")))
 (setq mweb-filename-extensions '("tt" "html" "tx"))
 (multi-web-global-mode 1)
 
@@ -142,3 +142,7 @@
 ;; for yaml
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+;; for php
+(require 'php-mode)
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
