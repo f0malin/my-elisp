@@ -97,7 +97,7 @@
 (require 'multi-web-mode)
 (setq mweb-default-major-mode 'html-mode)
 (setq mweb-tags '((javascript-mode "<script[^>]*?>" "</script>") (css-mode "<style[^>]*?>" "</style>") (php-mode "<\?php" "\?>")))
-(setq mweb-filename-extensions '("tt" "html"))
+(setq mweb-filename-extensions '("html"))
 (multi-web-global-mode 1)
 
 ;;;;;; for less-css-mode
@@ -151,6 +151,7 @@
 ;; for xslate
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.tx$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tt$" . web-mode))
 (require 'xslate)
 (add-hook 'web-mode-hook
           '(lambda ()
