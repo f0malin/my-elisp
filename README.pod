@@ -8,6 +8,6 @@ Add following line to you .emacs file:
 
   ;;;;;; for my custom
   (add-to-list 'load-path "~/.myel/")
-  (load "achilles")
+  (load "achilles2")
 
 Enjoy it.
