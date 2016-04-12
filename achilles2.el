@@ -33,3 +33,11 @@
 
 (setq make-backup-files nil)
 (setq-default make-backup-files nil)
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.tt$" . web-mode))
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 4)
+  )
+(add-hook 'web-mode-hook  'my-web-mode-hook)
