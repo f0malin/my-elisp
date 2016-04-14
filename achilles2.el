@@ -37,7 +37,7 @@
 ;; web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.tt$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
   (setq web-mode-markup-indent-offset 2)
