@@ -13,6 +13,7 @@
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 (ac-config-default)
+(add-to-list 'ac-modes 'typescript-mode)
 
 (defalias 'perl-mode 'cperl-mode)
 
