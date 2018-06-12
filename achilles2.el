@@ -51,3 +51,7 @@
 
 ;; javascript-mode
 (setq-default js-indent-level 4)
+
+;; editorconfig
+(require 'editorconfig)
+(editorconfig-mode 1)
