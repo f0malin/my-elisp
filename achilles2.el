@@ -10,10 +10,10 @@
 (setq-default tab-width 4)
 (setq-default cperl-indent-level 4)
 
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-(ac-config-default)
-(add-to-list 'ac-modes 'typescript-mode)
+;; (require 'go-autocomplete)
+;; (require 'auto-complete-config)
+;; (ac-config-default)
+;; (add-to-list 'ac-modes 'typescript-mode)
 
 (defalias 'perl-mode 'cperl-mode)
 
@@ -36,22 +36,22 @@
 (setq-default make-backup-files nil)
 
 ;; web-mode
-(require 'web-mode)
-(add-to-list 'auto-mode-alist '("\\.tt$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.ejs$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.wxml$" . web-mode))
-(defun my-web-mode-hook ()
-  "Hooks for Web mode."
-  (setq web-mode-markup-indent-offset 4)
-  (setq web-mode-css-indent-offset 4)
-  (setq web-mode-code-indent-offset 4)
-  )
-(add-hook 'web-mode-hook  'my-web-mode-hook)
+;; (require 'web-mode)
+;; (add-to-list 'auto-mode-alist '("\\.tt$" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.ejs$" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.wxml$" . web-mode))
+;; (defun my-web-mode-hook ()
+;;   "Hooks for Web mode."
+;;   (setq web-mode-markup-indent-offset 4)
+;;   (setq web-mode-css-indent-offset 4)
+;;   (setq web-mode-code-indent-offset 4)
+;;   )
+;; (add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;; javascript-mode
 (setq-default js-indent-level 4)
 
-;; editorconfig
-(require 'editorconfig)
-(editorconfig-mode 1)
+;; ;; editorconfig
+;; (require 'editorconfig)
+;; (editorconfig-mode 1)
